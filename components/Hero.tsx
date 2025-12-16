@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
            <div className="absolute inset-0 bg-emerald-600 rounded-[3rem] rotate-3 opacity-10"></div>
            <div className="absolute inset-0 bg-amber-400 rounded-[3rem] -rotate-3 opacity-20"></div>
            <img 
-              src="abertura.png" 
+              src="https://picsum.photos/800/1000?random=10" 
               alt="Mulher com pele radiante" 
               className="relative w-full h-full object-cover rounded-[3rem] shadow-2xl z-10"
            />
