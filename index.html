@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sua Clínica - Estética Avançada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+      
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      
+      /* Custom Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translate3d(0, 40px, 0);
+        }
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-bounce-slow {
+        animation: float 4s ease-in-out infinite;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Primary Palette: ROSE / PINK (Rightmost bars #F17D91 & #F6AAB9)
+              emerald: {
+                50: '#FFF0F3',
+                100: '#FFE4E9',
+                200: '#FCCCD6',
+                300: '#FAA0B4',
+                400: '#F6AAB9', // The 3rd Bar (Medium Pink)
+                500: '#F17D91', // The 4th Bar (Dark Pink) - Primary Action
+                600: '#DE5671',
+                700: '#BC3451',
+                800: '#9E2B45', // Darker Raspberry for text
+                900: '#84263B',
+                950: '#501220',
+              },
+              // Secondary Palette: TAUPE / ROSE BROWN (Leftmost bar #BC968A)
+              amber: {
+                50: '#FAF7F6',
+                100: '#F2EBE9',
+                200: '#E5D6D1',
+                300: '#D8C0B9',
+                400: '#CBAQA1',
+                500: '#BC968A', // The 1st Bar (Taupe)
+                600: '#A47B6E',
+                700: '#8A6256',
+                800: '#725046', // Dark Taupe for text accents
+                900: '#5E4139',
+              },
+              // Base/Neutral Palette: PALE PINK / WARM NEUTRALS (2nd bar #FADADD)
+              stone: {
+                50: '#FFFBFC', // Almost white pink
+                100: '#FCEEF1', // Very light pink background
+                200: '#FADADD', // The 2nd Bar (Pale Pink)
+                300: '#E8C5C9',
+                400: '#C6A8AA',
+                500: '#9E8587',
+                600: '#7D686A',
+                700: '#635153',
+                800: '#4F4041', // Warm Grey Text
+                900: '#3D3031', // Darkest Text
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
